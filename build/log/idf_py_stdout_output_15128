@@ -1,0 +1,1844 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:\esp\v6.0.2\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\ASUS\Documents\esp32workspace\Pet\build\app-template.elf C:\Users\ASUS\Documents\esp32workspace\Pet\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'C:\esp\v6.0.2\esp-idf\tools\idf.py' '-p' 'COM5'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40387d2e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep  5 2026 12:33:43[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=760f8h (483576) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00086120 vaddr=3fc94600 size=038f0h ( 14576) load[0m
+[0;32mI (165) esp_image: segment 2: paddr=00089a18 vaddr=40380000 size=06600h ( 26112) load[0m
+[0;32mI (170) esp_image: segment 3: paddr=00090020 vaddr=42000020 size=9a048h (630856) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=0012a070 vaddr=40386600 size=0dee4h ( 57060) load[0m
+[0;32mI (286) esp_image: segment 5: paddr=00137f5c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (304) cpu_start: Unicore app[0m
+[0;32mI (312) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (313) cpu_start: Pro cpu start user code[0m
+[0;32mI (313) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (315) app_init: Application information:[0m
+[0;32mI (319) app_init: Project name:     app-template[0m
+[0;32mI (323) app_init: App version:      1[0m
+[0;32mI (326) app_init: Compile time:     Sep  5 2026 12:33:15[0m
+[0;32mI (331) app_init: ELF file SHA256:  6dc8b999a...[0m
+[0;32mI (336) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (343) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (347) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (351) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCAF4B0 len 00010B50 (66 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (369) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (375) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (381) spi_flash: detected chip: generic[0m
+[0;32mI (384) spi_flash: flash io: dio[0m
+[0;33mW (387) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (399) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (405) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (420) main_task: Calling app_main()[0m
+[0;32mI (420) st7735: LCD panel create success[0m
+[0;32mI (440) st7735: init st7735 panel @0x3fcb33e8[0m
+[0;32mI (540) st7735: Command Count == 18[0m
+[0;32mI (540) st7735: cmd 01[0m
+[0;32mI (690) st7735: cmd 11[0m
+[0;32mI (940) st7735: cmd b1[0m
+[0;32mI (940) st7735: cmd b2[0m
+[0;32mI (940) st7735: cmd b3[0m
+[0;32mI (940) st7735: cmd b4[0m
+[0;32mI (940) st7735: cmd c0[0m
+[0;32mI (940) st7735: cmd c1[0m
+[0;32mI (940) st7735: cmd c2[0m
+[0;32mI (940) st7735: cmd c3[0m
+[0;32mI (940) st7735: cmd c4[0m
+[0;32mI (940) st7735: cmd c5[0m
+[0;32mI (940) st7735: cmd 20[0m
+[0;32mI (950) st7735: cmd 3a[0m
+[0;33mW (950) st7735: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (960) st7735: cmd e0[0m
+[0;32mI (960) st7735: cmd e1[0m
+[0;32mI (960) st7735: cmd 13[0m
+[0;32mI (960) st7735: cmd 29[0m
+[0;32mI (970) st7735: send init commands success[0m
+[0;32mI (980) button: IoT Button Version: 4.2.0[0m
+[0;32mI (990) pp: pp rom version: 9387209[0m
+[0;32mI (990) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1000) wifi:wifi driver task: 3fcb8b24, prio:23, stack:6656, core=0[0m
+[0;32mI (1000) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (1000) wifi:wifi certification version: v7.0[0m
+[0;32mI (1000) wifi:config NVS flash: enabled[0m
+[0;32mI (1000) wifi:config nano formatting: disabled[0m
+[0;32mI (1010) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1010) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1020) wifi:Init management short buffer num: 32[0m
+[0;32mI (1020) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1030) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1030) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1030) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1040) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1040) wifi_init: rx ba win: 6[0m
+[0;32mI (1050) wifi_init: accept mbox: 6[0m
+[0;32mI (1050) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1050) wifi_init: udp mbox: 6[0m
+[0;32mI (1050) wifi_init: tcp mbox: 6[0m
+[0;32mI (1060) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp mss: 1440[0m
+[0;32mI (1070) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1070) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1070) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20[0m
+[0;32mI (1110) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1120) wifi:mode : sta (44:bd:8d:24:8e:28)[0m
+[0;32mI (1120) wifi:enable tsf[0m
+[0;32mI (1120) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1120) ESPNOW_HELLO: My MAC: 44:bd:8d:24:8e:28[0m
+[0;32mI (1130) ESPNOW_HELLO: Waiting 5 seconds...[0m
+[0;32mI (6130) ESPNOW_HELLO: ESP-NOW ready. Broadcasting BEACON every second.[0m
+[0;32mI (6130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (7130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (8130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (9130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (10130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (11130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (12130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (13130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (14130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (15130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (16130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (17130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (18130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (19130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (20130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (21130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (22130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (23130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (24130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (25130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (26130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (27130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (28130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (29130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (30130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (31130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (32130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (33130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (34130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (35130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (36130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (37130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (38130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (39130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (40130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (41130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (42130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (43130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (44130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (45130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (46130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (47130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (48130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (49130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (50130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (51130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (52130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (53130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (54130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (55130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (56130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (57130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (58130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (59130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (60130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (60980) hunger : : 99 [0m
+[0;32mI (61130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (62130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (63130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (64130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (65130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (66130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (67130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (68130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (69130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (70130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (70980) hunger : : 98 [0m
+[0;32mI (71130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (72130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (73130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (74130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (75130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (76130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (77130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (78130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (79130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (80130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (80980) hunger : : 97 [0m
+[0;32mI (81130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (82130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (83130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (84130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (85130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (86130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (87130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (88130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (89130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (90130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (90980) hunger : : 96 [0m
+[0;32mI (91130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (92130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (93130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (94130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (95130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (96130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (97130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (98130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (99130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (100130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (100980) hunger : : 95 [0m
+[0;32mI (101130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (102130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (103130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (104130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (105130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (106130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (107130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (108130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (109130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (110130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (110980) hunger : : 94 [0m
+[0;32mI (111130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (112130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (113130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (114130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (115130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (116130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (117130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (118130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (119130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (120130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (120980) hunger : : 93 [0m
+[0;32mI (121130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (122130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (123130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (124130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (125130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (126130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (127130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (128130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (129130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (130130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (130980) hunger : : 92 [0m
+[0;32mI (131130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (132130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (133130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (134130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (135130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (136130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (137130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (138130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (139130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (140130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (140980) hunger : : 91 [0m
+[0;32mI (141130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (142130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (143130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (144130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (145130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (146130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (147130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (148130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (149130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (150130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (150980) hunger : : 90 [0m
+[0;32mI (151130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (152130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (153130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (154130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (155130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (156130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (157130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (158130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (159130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (160130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (160980) hunger : : 89 [0m
+[0;32mI (161130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (162130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (163130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (164130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (165130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (166130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (167130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (168130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (169130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (170130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (170980) hunger : : 88 [0m
+[0;32mI (171130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (172130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (173130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (174130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (175130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (176130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (177130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (178130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (179130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (180130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (180980) hunger : : 87 [0m
+[0;32mI (181130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (182130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (183140) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (184130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (185130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (186130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (187130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (188130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (189130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (190130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (190980) hunger : : 86 [0m
+[0;32mI (191130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (192130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (193130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (194130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (195130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (196130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (197130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (198130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (199130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (200130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (200980) hunger : : 85 [0m
+[0;32mI (201130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (202130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (203130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (204130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (205130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (206130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (207130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (208130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (209130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (210130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (210980) hunger : : 84 [0m
+[0;32mI (211130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (212130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (213130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (214130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (215130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (216130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (217130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (218130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (219130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (220130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (220980) hunger : : 83 [0m
+[0;32mI (221130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (222130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (258130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (259130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (260130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (260980) hunger : : 79 [0m
+[0;32mI (261130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (262130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (263130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (264130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (265130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (266130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (267130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (268130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (269130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (270130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (270980) hunger : : 78 [0m
+[0;32mI (271130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (272130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (273130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (274130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (275130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (276130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (277130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (278130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (279130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (280130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (280980) hunger : : 77 [0m
+[0;32mI (281130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (282130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (283130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (284130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (285130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (286130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (287130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (288130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (289130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (290130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (290980) hunger : : 76 [0m
+[0;32mI (291130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (292130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (293130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (294130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (295130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (296130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (297130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (298130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (299130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (300130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (300980) hunger : : 75 [0m
+[0;32mI (301130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (302130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (303130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (304130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (305130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (306130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (307130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (308130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (309130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (310130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (310980) hunger : : 74 [0m
+[0;32mI (311130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (312130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (313130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (314130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (315130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (316130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (317130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (318130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (319130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (320130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (320980) hunger : : 73 [0m
+[0;32mI (321130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (322130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (323130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (324130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (325130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (326130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (327130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (328130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (329130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (330130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (330980) hunger : : 72 [0m
+[0;32mI (331130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (332130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (333130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (334130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (335130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (336130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (337130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (338130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (339130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (340130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (340980) hunger : : 71 [0m
+[0;32mI (341130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (342130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (343130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (344130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (345130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (346130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (347130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (348130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (349130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (350130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (350980) hunger : : 70 [0m
+[0;32mI (351130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (352130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (353130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (354130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (355130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (356130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (357130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (358130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (359130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (360130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (360980) hunger : : 69 [0m
+[0;32mI (361130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (362130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (363130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (364130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (365130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (366130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (367130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (368130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (369130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (370130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (370980) hunger : : 68 [0m
+[0;32mI (371130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (372130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (373130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (374130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (375130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (376130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (377130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (378130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (379130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (380130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (380980) hunger : : 67 [0m
+[0;32mI (381130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (382130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (383130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (384130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (385130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (386130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (387130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (388130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (389130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (390130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (390980) hunger : : 66 [0m
+[0;32mI (391130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (392130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (393130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (394130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (395130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (396130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (397130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (398130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (399130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (400130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (400980) hunger : : 65 [0m
+[0;32mI (401130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (402130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (403130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (404130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (405130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (406130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (407130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (408130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (409130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (410130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (410980) hunger : : 64 [0m
+[0;32mI (411130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (412130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (413130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (414130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (415130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (416130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (417130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (418130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (419130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (420130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (420980) hunger : : 63 [0m
+[0;32mI (421130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (422130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (423130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (424130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (425130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (426130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (427130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (428130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (429130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (430130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (430980) hunger : : 62 [0m
+[0;32mI (431130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (432130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (433130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (434130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (435130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (436130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (437130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (438130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (439130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (440130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (440980) hunger : : 61 [0m
+[0;32mI (441130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (442130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (443130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (444130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (445130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (446130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (447130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (448130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (449130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (450130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (450980) hunger : : 60 [0m
+[0;32mI (451130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (452130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (453130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (454130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (455130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (456130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (457130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (458130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (459130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (460130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (460980) hunger : : 59 [0m
+[0;32mI (461130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (462130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (463130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (464130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (465130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (466130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (467130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (468130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (469130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (470130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (470980) hunger : : 58 [0m
+[0;32mI (471130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (472130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (473130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (474130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (475130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (476130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (477130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (478130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (479130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (480130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (480980) hunger : : 57 [0m
+[0;32mI (481130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (482130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (483130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (484130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (485130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (486130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (487130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (488130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (489130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (490130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (490980) hunger : : 56 [0m
+[0;32mI (491130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (492130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (493130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (494130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (495130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (496130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (497130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (498130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (499130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (500130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (500980) hunger : : 55 [0m
+[0;32mI (501130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (502130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (503130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (504130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (505130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (506130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (507130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (508130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (509130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (510130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (510980) hunger : : 54 [0m
+[0;32mI (511130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (512130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (513130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (514130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (515130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (516130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (517130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (518130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (519130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (520130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (520980) hunger : : 53 [0m
+[0;32mI (521130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (522130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (523130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (524130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (525130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (526130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (527130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (528130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (529130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (530130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (530980) hunger : : 52 [0m
+[0;32mI (531130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (532130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (533130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (534130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (535130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (536130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (537130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (538130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (539130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (540130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (540980) hunger : : 51 [0m
+[0;32mI (541130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (542130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (543130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (544130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (545130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (546130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (547130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (548130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (549130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (550130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (550980) hunger : : 50 [0m
+[0;32mI (551130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (552130) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (6136) ESPNOW_HELLO: ESP-NOW ready. Broadcasting BEACON every second.[0m
+[0;32mI (6136) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (7136) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (8136) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (9136) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (10136) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+inary image header(2048k). Using the size in the binary image heI (556) st7735: Command Count == 18
+[0;32mI (556) st7735: cmd 01[0m
+[0;32mI (706) st7735: cmd 11[0m
+[0;32mI (956) st7735: cmd b1[0m
+[0;32mI (956) st7735: cmd b2[0m
+[0;32mI (956) st7735: cmd b3[0m
+[0;32mI (956) st7735: cmd b4[0m
+[0;32mI (956) st7735: cmd c0[0m
+[0;32mI (956) st7735: cmd c1[0m
+[0;32mI (956) st7735: cmd c2[0m
+[0;32mI (956) st7735: cmd c3[0m
+[0;32mI (956) st7735: cmd c4[0m
+[0;32mI (956) st7735: cmd c5[0m
+[0;32mI (956) st7735: cmd 20[0m
+[0;32mI (966) st7735: cmd 3a[0m
+[0;33mW (966) st7735: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (976) st7735: cmd e0[0m
+[0;32mI (976) st7735: cmd e1[0m
+[0;32mI (976) st7735: cmd 13[0m
+[0;32mI (976) st7735: cmd 29[0m
+[0;32mI (986) st7735: send init commands success[0m
+[0;32mI (996) button: IoT Button Version: 4.2.0[0m
+[0;32mI (1006) pp: pp rom version: 9387209[0m
+[0;32mI (1006) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1016) wifi:wifi driver task: 3fcb8ba8, prio:23, stack:6656, core=0[0m
+[0;32mI (1016) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (1016) wifi:wifi certification version: v7.0[0m
+[0;32mI (1016) wifi:config NVS flash: enabled[0m
+[0;32mI (1016) wifi:config nano formatting: disabled[0m
+[0;32mI (1026) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1026) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1036) wifi:Init management short buffer num: 32[0m
+[0;32mI (1036) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1046) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1046) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1046) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1056) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1056) wifi_init: rx ba win: 6[0m
+[0;32mI (1066) wifi_init: accept mbox: 6[0m
+[0;32mI (1066) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1066) wifi_init: udp mbox: 6[0m
+[0;32mI (1066) wifi_init: tcp mbox: 6[0m
+[0;32mI (1076) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1076) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1076) wifi_init: tcp mss: 1440[0m
+[0;32mI (1086) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1086) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1086) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20[0m
+[0;32mI (1126) wifi:mode : sta (44:bd:8d:24:8e:28)[0m
+[0;32mI (1126) wifi:enable tsf[0m
+[0;32mI (1136) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1136) ESPNOW_HELLO: My MAC: 44:bd:8d:24:8e:28[0m
+[0;32mI (1136) ESPNOW_HELLO: Waiting 5 seconds...[0m
+ the binary image header.
+[0;32mI (421) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (427) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (442) main_task: Started on CPU0[0m
+[0;32mI (442) main_task: Calling app_main()[0m
+[0;32mI (442) st7735: LCD panel create success[0m
+[0;32mI (462) st7735: init st7735 panel @0x3fcb33e8[0m
+[0;32mI (562) st7735: Command Count == 18[0m
+[0;32mI (562) st7735: cmd 01[0m
+[0;32mI (712) st7735: cmd 11[0m
+[0;32mI (962) st7735: cmd b1[0m
+[0;32mI (962) st7735: cmd b2[0m
+[0;32mI (962) st7735: cmd b3[0m
+[0;32mI (962) st7735: cmd b4[0m
+[0;32mI (962) st7735: cmd c0[0m
+[0;32mI (962) st7735: cmd c1[0m
+[0;32mI (962) st7735: cmd c2[0m
+[0;32mI (962) st7735: cmd c3[0m
+[0;32mI (962) st7735: cmd c4[0m
+[0;32mI (962) st7735: cmd c5[0m
+[0;32mI (962) st7735: cmd 20[0m
+[0;32mI (972) st7735: cmd 3a[0m
+[0;33mW (972) st7735: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (982) st7735: cmd e0[0m
+[0;32mI (982) st7735: cmd e1[0m
+[0;32mI (982) st7735: cmd 13[0m
+[0;32mI (982) st7735: cmd 29[0m
+[0;32mI (992) st7735: send init commands success[0m
+[0;32mI (1002) button: IoT Button Version: 4.2.0[0m
+[0;32mI (1012) pp: pp rom version: 9387209[0m
+[0;32mI (1012) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1022) wifi:wifi driver task: 3fcb8ba8, prio:23, stack:6656, core=0[0m
+[0;32mI (1022) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (1022) wifi:wifi certification version: v7.0[0m
+[0;32mI (1022) wifi:config NVS flash: enabled[0m
+[0;32mI (1022) wifi:config nano formatting: disabled[0m
+[0;32mI (1032) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1032) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1042) wifi:Init management short buffer num: 32[0m
+[0;32mI (1042) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1052) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1052) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1052) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1062) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1062) wifi_init: rx ba win: 6[0m
+[0;32mI (1072) wifi_init: accept mbox: 6[0m
+[0;32mI (1072) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1072) wifi_init: udp mbox: 6[0m
+[0;32mI (1072) wifi_init: tcp mbox: 6[0m
+[0;32mI (1082) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1082) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1082) wifi_init: tcp mss: 1440[0m
+[0;32mI (1092) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1092) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1092) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20[0m
+[0;32mI (1132) wifi:mode : sta (44:bd:8d:24:8e:28)[0m
+[0;32mI (1132) wifi:enable tsf[0m
+[0;32mI (1142) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1142) ESPNOW_HELLO: My MAC: 44:bd:8d:24:8e:28[0m
+[0;32mI (1142) ESPNOW_HELLO: Waiting 5 seconds...[0m
+[0;32mI (6142) ESPNOW_HELLO: ESP-NOW ready. Broadcasting BEACON every second.[0m
+[0;32mI (6142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (7142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (8142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (9142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (10142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (11142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (12142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (13142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (14142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (15142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (16142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (17142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (18142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (19142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (20142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (21142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (22142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (23142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (24142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (25142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (26142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (27142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (28142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (29142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (30142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (31142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (32142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (33142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (34142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (35142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (36142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (37152) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (38142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (39142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (40142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (41142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (42142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (43142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (44142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (45142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (46142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (47142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (48142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (49142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (50142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (51142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (52142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (53142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (54142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (55142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (56142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (57142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (58142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (59142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (60142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (61002) hunger : : 99 [0m
+[0;32mI (61142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (62142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (63142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (64142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (65142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (66142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (67142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (68142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (69142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (70142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (71002) hunger : : 98 [0m
+[0;32mI (71142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (72142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (73142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (74142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (75142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (76142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (77142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (78142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (79142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (80142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (81002) hunger : : 97 [0m
+[0;32mI (81142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (82142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (83142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (84142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (85142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (86142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (87142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (88142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (89142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (90142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (91002) hunger : : 96 [0m
+[0;32mI (91142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (92142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (93142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (94142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (95142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (96142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (97142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (98142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (99142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (100142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (101002) hunger : : 95 [0m
+[0;32mI (101142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (102142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (103142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (104142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (105142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (106142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (107142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (108142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (109142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (110142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (111002) hunger : : 94 [0m
+[0;32mI (111142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (112142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (113142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (114142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (115142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (116142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (117142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (118142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (119142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (120142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (121002) hunger : : 93 [0m
+[0;32mI (121142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (122142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (123142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (124142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (125142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (126142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (127142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (128142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (129142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (130142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (131002) hunger : : 92 [0m
+[0;32mI (131142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (132142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (133142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (134142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (135142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (136142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (137142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (138142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (139142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (140142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (141002) hunger : : 91 [0m
+[0;32mI (141142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (142142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (143142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (144142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (145142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (146142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (147142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (148142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (149142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (150142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (151002) hunger : : 90 [0m
+[0;32mI (151142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (152142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (153142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (154142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (155142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (156142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (157142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (158142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (159142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (160142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (161002) hunger : : 89 [0m
+[0;32mI (161142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (162142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (163142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (164142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (165142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (166142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (167142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (168142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (169142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (170142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (171002) hunger : : 88 [0m
+[0;32mI (171142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (172142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (173142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (174142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (175142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (176142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (177142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (178142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (179142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (180142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (181002) hunger : : 87 [0m
+[0;32mI (181142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (182142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (183142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (184142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (185142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (186142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (187142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (188142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (189142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (190142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (191002) hunger : : 86 [0m
+[0;32mI (191142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (192142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (193142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (194142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (195152) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (196142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (197142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (198142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (199142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (200142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (201002) hunger : : 85 [0m
+[0;32mI (201142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (202142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (203142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (204142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (205142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (206142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (207142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (208142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (209142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (210142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (211002) hunger : : 84 [0m
+[0;32mI (211142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (212142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (213142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (214142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (215142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (216142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (217142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (218142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (219142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (220142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (221002) hunger : : 83 [0m
+[0;32mI (221142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (222142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (223142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (224142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (225142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (226142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (227142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (228142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (229142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (230142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (231002) hunger : : 82 [0m
+[0;32mI (231142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (232142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (233142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (234142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (235142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (236142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (237142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (238142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (239142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (240142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (241002) hunger : : 81 [0m
+[0;32mI (241142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (242142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (243142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (244142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (245142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (246142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (247142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (248142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (249142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (250142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (251002) hunger : : 80 [0m
+[0;32mI (251142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (252142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (253142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (254142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (255142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (256142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (257142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (258142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (259142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (260142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (261002) hunger : : 79 [0m
+[0;32mI (261142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (262142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (263142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (264142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (265142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (266142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (267142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (268142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (269142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (270142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (271002) hunger : : 78 [0m
+[0;32mI (271142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (272142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (273142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (274142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (275142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (276142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (277142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (278142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (279142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (280142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (281002) hunger : : 77 [0m
+[0;32mI (281142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (282142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (283142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (284142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (285142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (286142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (287142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (288142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (289142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (290142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (291002) hunger : : 76 [0m
+[0;32mI (291142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (292142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (293142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (294142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (295142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (296142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (297142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (298142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (299142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (300142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (301002) hunger : : 75 [0m
+[0;32mI (301142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (302142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (303142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (304142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (305142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (306142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (307142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (308142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (309142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (310142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (311002) hunger : : 74 [0m
+[0;32mI (311142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (312142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (313142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (314142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (315142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (316142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (317142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (318142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (319142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (320142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (321002) hunger : : 73 [0m
+[0;32mI (321142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (322142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (323142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (324142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (325142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (326142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (327142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (328142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (329142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (330142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (331002) hunger : : 72 [0m
+[0;32mI (331142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (332142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (333142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (334142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (335142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (336142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (337142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (338142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (339142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (340142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (341002) hunger : : 71 [0m
+[0;32mI (341142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (342142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (343142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (344142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (345142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (346142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (347142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (348142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (349142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (350142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (351002) hunger : : 70 [0m
+[0;32mI (351142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (352142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (353142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (354142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (355142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (356142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (357142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (358142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (359142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (360142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (361002) hunger : : 69 [0m
+[0;32mI (361142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (362142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (363142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (364142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (365142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (366142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (367142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (368142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (369142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (370142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (371002) hunger : : 68 [0m
+[0;32mI (371142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (372142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (373142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (374142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (375142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (376142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (377142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (378142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (379142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (380142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (381002) hunger : : 67 [0m
+[0;32mI (381142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (382142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (383142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (384142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (385142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (386142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (387142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (388142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (389142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (390142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (391002) hunger : : 66 [0m
+[0;32mI (391142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (392142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (393142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (394142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (395142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (396142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (397142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (398142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (399142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (400142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (401002) hunger : : 65 [0m
+[0;32mI (401142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (402142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (403142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (404142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (405142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (406142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (407142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (408142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (409142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (410142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (411002) hunger : : 64 [0m
+[0;32mI (411142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (412142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (413142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (414142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (415142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (416142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (417142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (418142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (419142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (420142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (421002) hunger : : 63 [0m
+[0;32mI (421142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (422142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (423142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (424142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (425142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (426142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (427142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (428142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (429142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (430142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (431002) hunger : : 62 [0m
+[0;32mI (431142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (432142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (433142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (434142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (435142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (436142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (437142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (438142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (439142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (440142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (441002) hunger : : 61 [0m
+[0;32mI (441142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (442142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (443142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (444142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (445142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (446142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (447142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (448142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (449142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (450142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (451002) hunger : : 60 [0m
+[0;32mI (451142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (452142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (453142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (454142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (455142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (456142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (457142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (458142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (459142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (460142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (461002) hunger : : 59 [0m
+[0;32mI (461142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (462142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (463142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (464142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (465142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (466142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (467142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (468142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (469142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (470142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (471002) hunger : : 58 [0m
+[0;32mI (471142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (472142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (473142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (474142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (475142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (476142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (477142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (478142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (479142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (480142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (481002) hunger : : 57 [0m
+[0;32mI (481142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (482142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (483142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (484142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (485142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (486142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (487142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (488142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (489142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (490142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (491002) hunger : : 56 [0m
+[0;32mI (491142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (492142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (493142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (494142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (495142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (496142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (497142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (498142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (499142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (500142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (501002) hunger : : 55 [0m
+[0;32mI (501142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (502142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (503142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (504142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (505142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (506142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (507142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (508142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (509142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (510142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (511002) hunger : : 54 [0m
+[0;32mI (511142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (512142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (513142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (514142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (515142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (516142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (517142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (518142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (519142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (520142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (521002) hunger : : 53 [0m
+[0;32mI (521142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (522142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (523142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (524142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (525142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (526142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (527142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (528142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (529142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (530142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (531002) hunger : : 52 [0m
+[0;32mI (531142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (532142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (533142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (534142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (535142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (536142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (537142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (538152) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (539142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (540142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (541002) hunger : : 51 [0m
+[0;32mI (541142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (542142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (543142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (544142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (545142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (546142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (547142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (548142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (549142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (550142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (551002) hunger : : 50 [0m
+[0;32mI (551142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (552142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (553142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (554142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (555142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (556142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (557142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (558142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (559142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (560142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (561002) hunger : : 49 [0m
+[0;32mI (561142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (562142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (563142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (564142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (565142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (566142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (567142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (568142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (569142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (570142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (571002) hunger : : 48 [0m
+[0;32mI (571142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (572142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (573142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (574142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (575142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (576142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (577142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (578142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (579142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (580142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (581002) hunger : : 47 [0m
+[0;32mI (581142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (582142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (583142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (584142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (585142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (586142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (587142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (588142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (589142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (590142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (591002) hunger : : 46 [0m
+[0;32mI (591142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (592142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (593142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (594142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (595142) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (716) st7735: cmd 11[0m
+[0;32mI (966) st7735: cmd b1[0m
+[0;32mI (966) st7735: cmd b2[0m
+[0;32mI (966) st7735: cmd b3[0m
+[0;32mI (966) st7735: cmd b4[0m
+[0;32mI (966) st7735: cmd c0[0m
+[0;32mI (966) st7735: cmd c1[0m
+[0;32mI (966) st7735: cmd c2[0m
+[0;32mI (966) st7735: cmd c3[0m
+[0;32mI (966) st7735: cmd c4[0m
+[0;32mI (966) st7735: cmd c5[0m
+[0;32mI (966) st7735: cmd 20[0m
+[0;32mI (976) st7735: cmd 3a[0m
+[0;33mW (976) st7735: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (986) st7735: cmd e0[0m
+[0;32mI (986) st7735: cmd e1[0m
+[0;32mI (986) st7735: cmd 13[0m
+[0;32mI (986) st7735: cmd 29[0m
+[0;32mI (996) st7735: send init commands success[0m
+[0;32mI (1006) button: IoT Button Version: 4.2.0[0m
+[0;32mI (1016) pp: pp rom version: 9387209[0m
+[0;32mI (1016) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1026) wifi:wifi driver task: 3fcb8b24, prio:23, stack:6656, core=0[0m
+[0;32mI (1026) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (1026) wifi:wifi certification version: v7.0[0m
+[0;32mI (1026) wifi:config NVS flash: enabled[0m
+[0;32mI (1026) wifi:config nano formatting: disabled[0m
+[0;32mI (1036) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1036) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1046) wifi:Init management short buffer num: 32[0m
+[0;32mI (1046) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1046) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1056) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1056) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1066) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1066) wifi_init: rx ba win: 6[0m
+[0;32mI (1066) wifi_init: accept mbox: 6[0m
+[0;32mI (1076) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1076) wifi_init: udp mbox: 6[0m
+[0;32mI (1076) wifi_init: tcp mbox: 6[0m
+[0;32mI (1086) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1086) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1086) wifi_init: tcp mss: 1440[0m
+[0;32mI (1096) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1096) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1096) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048b82
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep  5 2026 12:33:43[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=760f8h (483576) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00086120 vaddr=3fc94600 size=038f0h ( 14576) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00089a18 vaddr=40380000 size=06600h ( 26112) load[0m
+[0;32mI (170) esp_image: segment 3: paddr=00090020 vaddr=42000020 size=9a048h (630856) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=0012a070 vaddr=40386600 size=0dee4h ( 57060) load[0m
+[0;32mI (286) esp_image: segment 5: paddr=00137f5c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (304) cpu_start: Unicore app[0m
+[0;32mI (312) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     app-template[0m
+[0;32mI (322) app_init: App version:      1[0m
+[0;32mI (326) app_init: Compile time:     Sep  5 2026 12:33:15[0m
+[0;32mI (331) app_init: ELF file SHA256:  6dc8b999a...[0m
+[0;32mI (335) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (339) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (343) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (347) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (351) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (357) heap_init: At 3FCAF4B0 len 00010B50 (66 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (368) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (374) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: generic[0m
+[0;32mI (383) spi_flash: flash io: dio[0m
+[0;33mW (386) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (399) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (404) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (420) main_task: Calling app_main()[0m
+[0;32mI (420) st7735: LCD panel create success[0m
+[0;32mI (440) st7735: init st7735 panel @0x3fcb33e8[0m
+[0;32mI (540) st7735: Command Count == 18[0m
+[0;32mI (540) st7735: cmd 01[0m
+[0;32mI (690) st7735: cmd 11[0m
+[0;32mI (940) st7735: cmd b1[0m
+[0;32mI (940) st7735: cmd b2[0m
+[0;32mI (940) st7735: cmd b3[0m
+[0;32mI (940) st7735: cmd b4[0m
+[0;32mI (940) st7735: cmd c0[0m
+[0;32mI (940) st7735: cmd c1[0m
+[0;32mI (940) st7735: cmd c2[0m
+[0;32mI (940) st7735: cmd c3[0m
+[0;32mI (940) st7735: cmd c4[0m
+[0;32mI (940) st7735: cmd c5[0m
+[0;32mI (940) st7735: cmd 20[0m
+[0;32mI (950) st7735: cmd 3a[0m
+[0;33mW (950) st7735: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (960) st7735: cmd e0[0m
+[0;32mI (960) st7735: cmd e1[0m
+[0;32mI (960) st7735: cmd 13[0m
+[0;32mI (960) st7735: cmd 29[0m
+[0;32mI (970) st7735: send init commands success[0m
+[0;32mI (980) button: IoT Button Version: 4.2.0[0m
+[0;32mI (990) pp: pp rom version: 9387209[0m
+[0;32mI (990) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1000) wifi:wifi driver task: 3fcb8b24, prio:23, stack:6656, core=0[0m
+[0;32mI (1000) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (1000) wifi:wifi certification version: v7.0[0m
+[0;32mI (1000) wifi:config NVS flash: enabled[0m
+[0;32mI (1000) wifi:config nano formatting: disabled[0m
+[0;32mI (1010) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1010) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1020) wifi:Init management short buffer num: 32[0m
+[0;32mI (1020) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1020) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1030) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1030) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1040) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1040) wifi_init: rx ba win: 6[0m
+[0;32mI (1040) wifi_init: accept mbox: 6[0m
+[0;32mI (1050) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1050) wifi_init: udp mbox: 6[0m
+[0;32mI (1050) wifi_init: tcp mbox: 6[0m
+[0;32mI (1060) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp mss: 1440[0m
+[0;32mI (1070) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1070) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1070) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048b82
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep  5 2026 12:33:43[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=760f8h (483576) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00086120 vaddr=3fc94600 size=038f0h ( 14576) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00089a18 vaddr=40380000 size=06600h ( 26112) load[0m
+[0;32mI (170) esp_image: segment 3: paddr=00090020 vaddr=42000020 size=9a048h (630856) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=0012a070 vaddr=40386600 size=0dee4h ( 57060) load[0m
+[0;32mI (286) esp_image: segment 5: paddr=00137f5c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (304) cpu_start: Unicore app[0m
+[0;32mI (312) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     app-template[0m
+[0;32mI (322) app_init: App version:      1[0m
+[0;32mI (326) app_init: Compile time:     Sep  5 2026 12:33:15[0m
+[0;32mI (331) app_init: ELF file SHA256:  6dc8b999a...[0m
+[0;32mI (335) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (339) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (343) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (347) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (351) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (357) heap_init: At 3FCAF4B0 len 00010B50 (66 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (368) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (374) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: generic[0m
+[0;32mI (383) spi_flash: flash io: dio[0m
+[0;33mW (386) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (399) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (405) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (420) main_task: Calling app_main()[0m
+[0;32mI (420) st7735: LCD panel create success[0m
+[0;32mI (440) st7735: init st7735 panel @0x3fcb33e8[0m
+[0;32mI (540) st7735: Command Count == 18[0m
+[0;32mI (540) st7735: cmd 01[0m
+[0;32mI (690) st7735: cmd 11[0m
+[0;32mI (940) st7735: cmd b1[0m
+[0;32mI (940) st7735: cmd b2[0m
+[0;32mI (940) st7735: cmd b3[0m
+[0;32mI (940) st7735: cmd b4[0m
+[0;32mI (940) st7735: cmd c0[0m
+[0;32mI (940) st7735: cmd c1[0m
+[0;32mI (940) st7735: cmd c2[0m
+[0;32mI (940) st7735: cmd c3[0m
+[0;32mI (940) st7735: cmd c4[0m
+[0;32mI (940) st7735: cmd c5[0m
+[0;32mI (940) st7735: cmd 20[0m
+[0;32mI (950) st7735: cmd 3a[0m
+[0;33mW (950) st7735: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (960) st7735: cmd e0[0m
+[0;32mI (960) st7735: cmd e1[0m
+[0;32mI (960) st7735: cmd 13[0m
+[0;32mI (960) st7735: cmd 29[0m
+[0;32mI (970) st7735: send init commands success[0m
+[0;32mI (980) button: IoT Button Version: 4.2.0[0m
+[0;32mI (990) pp: pp rom version: 9387209[0m
+[0;32mI (990) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1000) wifi:wifi driver task: 3fcb8b24, prio:23, stack:6656, core=0[0m
+[0;32mI (1000) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (1000) wifi:wifi certification version: v7.0[0m
+[0;32mI (1000) wifi:config NVS flash: enabled[0m
+[0;32mI (1000) wifi:config nano formatting: disabled[0m
+[0;32mI (1010) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1010) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1020) wifi:Init management short buffer num: 32[0m
+[0;32mI (1020) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1020) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1030) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1030) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1040) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1040) wifi_init: rx ba win: 6[0m
+[0;32mI (1040) wifi_init: accept mbox: 6[0m
+[0;32mI (1050) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1050) wifi_init: udp mbox: 6[0m
+[0;32mI (1050) wifi_init: tcp mbox: 6[0m
+[0;32mI (1060) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp mss: 1440[0m
+[0;32mI (1070) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1070) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1070) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048b82
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep  5 2026 12:33:43[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=760f8h (483576) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00086120 vaddr=3fc94600 size=038f0h ( 14576) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00089a18 vaddr=40380000 size=06600h ( 26112) load[0m
+[0;32mI (170) esp_image: segment 3: paddr=00090020 vaddr=42000020 size=9a048h (630856) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=0012a070 vaddr=40386600 size=0dee4h ( 57060) load[0m
+[0;32mI (286) esp_image: segment 5: paddr=00137f5c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (304) cpu_start: Unicore app[0m
+[0;32mI (312) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     app-template[0m
+[0;32mI (322) app_init: App version:      1[0m
+[0;32mI (326) app_init: Compile time:     Sep  5 2026 12:33:15[0m
+[0;32mI (331) app_init: ELF file SHA256:  6dc8b999a...[0m
+[0;32mI (335) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (339) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (343) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (347) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (351) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (357) heap_init: At 3FCAF4B0 len 00010B50 (66 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (368) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (374) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: generic[0m
+[0;32mI (383) spi_flash: flash io: dio[0m
+[0;33mW (386) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (399) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (405) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (420) main_task: Calling app_main()[0m
+[0;32mI (420) st7735: LCD panel create success[0m
+[0;32mI (440) st7735: init st7735 panel @0x3fcb33e8[0m
+[0;32mI (540) st7735: Command Count == 18[0m
+[0;32mI (540) st7735: cmd 01[0m
+[0;32mI (690) st7735: cmd 11[0m
+[0;32mI (940) st7735: cmd b1[0m
+[0;32mI (940) st7735: cmd b2[0m
+[0;32mI (940) st7735: cmd b3[0m
+[0;32mI (940) st7735: cmd b4[0m
+[0;32mI (940) st7735: cmd c0[0m
+[0;32mI (940) st7735: cmd c1[0m
+[0;32mI (940) st7735: cmd c2[0m
+[0;32mI (940) st7735: cmd c3[0m
+[0;32mI (940) st7735: cmd c4[0m
+[0;32mI (940) st7735: cmd c5[0m
+[0;32mI (940) st7735: cmd 20[0m
+[0;32mI (950) st7735: cmd 3a[0m
+[0;33mW (950) st7735: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (960) st7735: cmd e0[0m
+[0;32mI (960) st7735: cmd e1[0m
+[0;32mI (960) st7735: cmd 13[0m
+[0;32mI (960) st7735: cmd 29[0m
+[0;32mI (970) st7735: send init commands success[0m
+[0;32mI (980) button: IoT Button Version: 4.2.0[0m
+[0;32mI (990) pp: pp rom version: 9387209[0m
+[0;32mI (990) net80211: net80211 rom version: 9387209[0m
+[0;32mI (1000) wifi:wifi driver task: 3fcb8b24, prio:23, stack:6656, core=0[0m
+[0;32mI (1000) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (1000) wifi:wifi certification version: v7.0[0m
+[0;32mI (1000) wifi:config NVS flash: enabled[0m
+[0;32mI (1000) wifi:config nano formatting: disabled[0m
+[0;32mI (1010) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1010) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1020) wifi:Init management short buffer num: 32[0m
+[0;32mI (1020) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1020) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1030) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1030) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1040) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1040) wifi_init: rx ba win: 6[0m
+[0;32mI (1040) wifi_init: accept mbox: 6[0m
+[0;32mI (1050) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1050) wifi_init: udp mbox: 6[0m
+[0;32mI (1050) wifi_init: tcp mbox: 6[0m
+[0;32mI (1060) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1060) wifi_init: tcp mss: 1440[0m
+[0;32mI (1070) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1070) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1070) phy_init: phy_version 1235,8bd8c6fc,Apr 13 2026,18:46:20[0m
+[0;32mI (1110) wifi:mode : sta (44:bd:8d:24:8e:28)[0m
+[0;32mI (1110) wifi:enable tsf[0m
+[0;32mI (1120) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1120) ESPNOW_HELLO: My MAC: 44:bd:8d:24:8e:28[0m
+[0;32mI (1120) ESPNOW_HELLO: Waiting 5 seconds...[0m
+[0;32mI (6120) ESPNOW_HELLO: ESP-NOW ready. Broadcasting BEACON every second.[0m
+[0;32mI (6120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (7120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (8120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (9120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (10120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (11120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (12120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (13120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (14120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (15120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (16120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (17120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (18120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (19120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (20120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (21120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (22120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (23120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (24120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (25120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (26120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (27120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (28120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
+[0;32mI (29120) ESPNOW_HELLO: Sent to ff:ff:ff:ff:ff:ff — OK[0m
