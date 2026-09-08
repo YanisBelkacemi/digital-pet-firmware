@@ -1,7 +1,0 @@
-Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe -m esptool -p COM4 -b 460800 --before default-reset --after hard-reset --chip esp32c3 erase-flash
-
-A fatal error occurred: Could not open COM4, the port is busy or doesn't exist.
-(could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2))
-
-Hint: Check if the port is correct and ESP connected
-

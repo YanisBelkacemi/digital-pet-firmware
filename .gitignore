@@ -1,0 +1,8 @@
+.settings/
+build/
+managed_components/
+
+.clangd
+.clangd-format
+
+

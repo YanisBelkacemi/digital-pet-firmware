@@ -1,3 +1,0 @@
-CompileFlags:
-  CompilationDatabase: C:\Users\ASUS\Documents\esp32workspace\Pet\build
-  Remove: [-m*, -f*]
